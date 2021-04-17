@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Digionline cookie extractor</title>
+  </head>
+  <body>
+    <div style="width:620px;">
+      <h2>Kodi plugin Digionline cookie extractor</h2>
+      <div>
+        Login to digionline set Kodi host and send cookies to addon 
+        <br/>
+        Make sure to enable:
+        <ul>
+          <li>"Allow remote control over HTTP"</li>
+          <li>"Allow remote control from application on this / other system(s)" </li>
+        </ul>
+        depending where Kodi is on the same system with Firefox browser or not.
+      </div>
+
+      <div style="margin-top:4px;">
+        <label>
+          <div style="display:inline-block;width:150px;">Kodi host</div>
+          <div style="display:inline-block;width:450px;"><input type="text" id="host" name="host" style="width:100%;" value=""/></div>
+        </label>
+      </div>
+
+      <div style="margin-top:4px;">
+        <label>
+          <div style="display:inline-block;width:150px;">DOSESSV3PRI</div>
+          <div style="display:inline-block;width:450px;"><input type="text" readonly id="DOSESSV3PRI" name="DOSESSV3PRI" style="width:100%;"/></div>
+        </label>
+      </div>
+
+      <div style="margin-top:4px;">
+        <label>
+          <div style="display:inline-block;width:150px;">deviceId</div>
+          <div style="display:inline-block;width:450px;"><input type="text" readonly id="deviceId" name="deviceId" style="width:100%;"/></div>
+        </label>
+      </div>
+
+      <div style="margin-top:10px;">
+        <button id="btn_send">Setup addon</button>
+      </div>
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
